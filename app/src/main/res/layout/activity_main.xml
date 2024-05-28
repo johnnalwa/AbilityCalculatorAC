@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <EditText
+        android:id="@+id/netSalaryInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter the net salary"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/basicSalaryInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter the basic salary"
+        android:layout_below="@id/netSalaryInput"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/totalArrearsInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter the total arrears and allowances"
+        android:layout_below="@id/basicSalaryInput"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/grossSalaryInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalArrearsInput"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Enter the gross salary"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grossSalaryInput"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="243dp"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:text="Calculate"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grossSalaryInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="142dp"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:text="Clear"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
